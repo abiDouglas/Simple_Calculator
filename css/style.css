@@ -1,3 +1,19 @@
 *{
     box-sizing: border-box;
 }
+
+input{
+    margin: 5px 0;
+}
+fieldset{
+    width: 250px;
+    padding: 10px 20px;
+    background-color:lightsteelblue;
+    margin-bottom: 10px;
+}
+
+legend{
+    background-color: slategray;
+    padding: 0 10px;
+    color: whitesmoke;
+}
