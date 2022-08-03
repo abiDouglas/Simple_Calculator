@@ -5,19 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
     <title>Simple Calculator</title>
 </head>
 <body>
     <div class="main">
-        <div class="displayContainer">
-            <div class="title">Simple Calculator</div>
-            <div class="display" >
-                <input type="text" id="display" readonly>
-            </div>
-        </div>
-        <div class="inputContainer">
-            
-        </div>
+        <form name="mycalculator" action='' method='GET'>
+            <fieldset>
+                <legend>My calculator</legend>
+                <textarea name="output" rows="3" cols="20"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Input</legend>
+                Operands: &nbsp;
+                <input type="text" name="input_a" id="input_a" size="3" maxlength="3">&nbsp;
+                <input type="text" name="input_b" id="input_b" size="3" maxlength="3">
+                <br>
+                Operator: &nbsp;
+                <input type="button" name="add" value="+" onclick="addValue()">
+                <input type="button" name="mul" value="&times;" onclick="mulValue()">
+                <input type="button" name="div" value=":" onclick="divValue()">
+                <input type="reset" value="clear">
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
